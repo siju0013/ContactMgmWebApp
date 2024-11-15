@@ -34,7 +34,7 @@ Angular 17 & Boostrap 5
 ##Installation of WebApplication
 ============================
 1.Clone the repo:
-      git clone https://github.com/siju0013/ContactsManagementApp.git
+      git clone https://github.com/siju0013/ContactMgmWebApp.git
 2. Install NPM Packages
     npm install
 3. For running application and for running in new browser
