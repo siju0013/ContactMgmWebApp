@@ -26,3 +26,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+
+##Framework Used for Web Applciation
+==================================
+Angular 17 & Boostrap 5
+
+##Installation of WebApplication
+============================
+1.Clone the repo:
+      git clone https://github.com/siju0013/ContactsManagementApp.git
+2. Install NPM Packages
+    npm install
+3. For running application and for running in new browser
+    ng s -o
+Api endpoint are stored in Environment ts file. Boostrap5 is used for layout and design. Boostrap css and js path is added in angular.json file. Here Appcomponent is working as parent component and child components are modify and List. Communication between parent & child component is used with the help of @Input() and @Output decorator. Rxjs is used make observable api request. Alert is used for error handling.
