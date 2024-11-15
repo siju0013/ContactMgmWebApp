@@ -1,0 +1,17 @@
+<div class="container mt-2">
+  @if(moduleType==='List'){
+  <div class="row mb-2">
+    <div class="col">
+      <button class="btn btn-success btn-sm" (click)="moduleType='New'">New</button>
+    </div>
+  </div>
+  <div class="border mb-3"></div>
+  <app-list [module]="moduleType" (getResp)="ModuleChange($event)"></app-list>
+  }
+  @else if(moduleType=='New'||moduleType=='Edit'){
+  <app-modify [module]="moduleType" [ID]="id"[EditObj]="editResponeObj" (GetModule)="Cancel($event)"></app-modify>
+  }
+
+</div>
+
+<router-outlet />

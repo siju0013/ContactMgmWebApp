@@ -1,0 +1,30 @@
+<div class="container">
+  <form [formGroup]="ContactForm" (ngSubmit)="Save()" class="form b-1">
+    <div class="border p-3">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" formControlName="firstName" id="firstName">
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" formControlName="lastName" id="lastName">
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="email" class="form-label" >Email</label>
+          <input type="email" class="form-control" formControlName="email" id="email">
+        </div>
+      </div>
+      <div class="row g-3 mt-2">
+        <div class="col-12">
+          <button type="submit" class="btn btn-success m-1">Save</button>
+          <button type="button" class="btn btn-danger m-1" (click)="Cancel()">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+</div>
